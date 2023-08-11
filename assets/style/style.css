@@ -1,0 +1,27 @@
+body {
+    background-image: url(/assets/pic/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    margin: 80px;
+    font-size:30px;
+    color: white;
+}
+#gameName{
+    color: #daa520;
+    font-size: 100px;
+}
+#gameExpression {
+    font-style: italic;
+}
+#startNew , #newCard , #reset{
+    background-color: #daa520;
+    color: green;
+    border-radius: 10px;
+    width: 250px;
+    font-weight: bold;
+}
+.container p {
+    margin: 30px;
+}
