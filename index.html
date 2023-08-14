@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootStrap/bootstrap-style.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
-    <div class="container">
-        <p id="gameName"> Blackjack </p>
-        <p id="gameExpression"> Want to play a round? </p>
-        <p id="cards"> Cards: </p>
-        <p id="Sum"> Sum:</p>
-        <button id="startNew">START GAME</button>
-        <button id="newCard">NEW CARD</button>
-        <button id="reset">RESET</button>
-        <p id="score"> Habib: $</p>
+    <div class="text-center">
+        <h1 class="text-warning text-center">Blackjack</h1>
+         <div>
+            <p id="message-el" class="text-light">Want to play a round?</p>
+            <p id="cards-el" class="text-light">Card:</p>
+            <p id="sum-el" class="text-light">Sum:</p>
+            <div class="btn-start-game btn-sm mb-2 b-0">
+                <button class="btn btn-warning text-success" onclick="startGamme()" id="start">START GAME</button>
+                <button class="btn btn-warning text-success" onclick="newCard()" id="new">NEW CARD</button>
+                <button class="btn btn-danger text-dark" onclick="reset()" id="reset">RESET GAME</button>
+            </div>
+            <p id="player-el"></p>
+         </div>
     </div>
+    
     
 
 
 
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/index.js"></script>
+
+
+    <script src="/assets/bootStrap/bootstrap-script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
