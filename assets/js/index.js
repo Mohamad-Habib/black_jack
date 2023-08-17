@@ -31,6 +31,31 @@ sum = choose1 + choose2
         
         }else {
                messageEl.innerHTML = `do you want another card`
+               newBtn.addEventListener("click", function newCard(){
+         
+         
+                choose = Math.floor(Math.random(wara2)*13)
+                sum += choose
+                amount = amount-50
+                cardsEl.innerHTML += ` ${choose}`
+                sumEl.innerHTML = `Sum: ${sum}`
+                playerEl.innerHTML = `HABIB: ${amount} $`
+                if(sum>21){
+                    messageEl.innerHTML = `you loose`
+                    newBtn.removeEventListener("click",newCard)
+                 }
+                if(sum == 21){
+                          messageEl.innerHTML = `you are the black jack`
+                          newBtn.removeEventListener("click",newCard)
+                     }
+                     else if(sum<21) {
+                         messageEl.innerHTML = `do you want another card`
+                          
+                     }
+            
+                
+        
+        })
              
         }
 
@@ -41,31 +66,31 @@ sum = choose1 + choose2
     
 })
 
-   newBtn.addEventListener("click", function newCard(){
+//    newBtn.addEventListener("click", function newCard(){
          
          
-        choose = Math.floor(Math.random(wara2)*13)
-        sum = sum+choose
-        amount = amount-50
-        cardsEl.innerHTML += ` ${choose}`
-        sumEl.innerHTML = `Sum: ${sum}`
-        playerEl.innerHTML = `HABIB: ${amount} $`
-        if(sum>21){
-            messageEl.innerHTML = `you loose`
-            newBtn.removeEventListener("click",newCard)
-         }
-        if(sum == 21){
-                  messageEl.innerHTML = `you are the black jack`
-                  newBtn.removeEventListener("click",newCard)
-             }
-             else if(sum<21) {
-                 messageEl.innerHTML = `do you want another card`
-                  newCard()
-             }
+//         choose = Math.floor(Math.random(wara2)*13)
+//         sum = sum+choose
+//         amount = amount-50
+//         cardsEl.innerHTML += ` ${choose}`
+//         sumEl.innerHTML = `Sum: ${sum}`
+//         playerEl.innerHTML = `HABIB: ${amount} $`
+//         if(sum>21){
+//             messageEl.innerHTML = `you loose`
+//             newBtn.removeEventListener("click",newCard)
+//          }
+//         if(sum == 21){
+//                   messageEl.innerHTML = `you are the black jack`
+//                   newBtn.removeEventListener("click",newCard)
+//              }
+//              else if(sum<21) {
+//                  messageEl.innerHTML = `do you want another card`
+//                   newCard()
+//              }
     
         
 
-})
+// })
 reset.addEventListener("click", function(){
     window.location.replace("index.html")
 })
