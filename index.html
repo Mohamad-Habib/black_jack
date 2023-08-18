@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootStrap/bootstrap-style.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title></title>
+    <title>BlackJack</title>
 </head>
 <body>
     <div class="text-center">
-        <h1 class="text-warning text-center">Blackjack</h1>
-         <div>
-            <p id="messageEl" class="text-light">Want to play a round?</p>
-            <p id="cardsEl" class="text-light">Card: </p>
-            <p id="sumEl" class="text-light">Sum:</p>
-            <div class="btn-start-game btn-sm mb-2 b-0">
-                <button class="btn btn-warning text-success"  id="startBtn">START GAME</button>
-                <button class="btn btn-warning text-success"  id="newBtn">NEW CARD</button>
-                <button class="btn btn-danger text-dark" onclick="reset()" id="reset">RESET GAME</button>
-            </div>
-            <p id="playerEl"> HABIB : $ </p>
-         </div>
+        <h1>Blackjack</h1>
+        <div class="text-light">
+            <p id="message-el">Want to play a round?</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+        </div>
+        <button class="btn-start-game btn btn-warning btn-sm text-success mb-2 b-0" onclick="startGame()">START GAME</button>
+        <button class="btn-start-game btn btn-warning btn-sm text-success mb-2 b-0" onclick="newCard()">NEW CARD</button>
+        <button class="btn-start-game btn btn-danger btn-sm text-dark mb-2 b-0" onclick="reset()">RESET</button>
+        <p class="text-light fw-bold" id="player-el"></p>
     </div>
-    
 
-
-    <script src="/assets/bootStrap/bootstrap-script.js"></script>
-    <script src="/assets/js/index.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
